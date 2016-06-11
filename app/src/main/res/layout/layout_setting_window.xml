@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#E0424242"
+    android:padding="16dp" >
+
+    <TextView
+        android:padding="6dp"
+        android:textSize="16sp"
+        android:text="歌词大小："
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:paddingTop="3dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="3dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:progressDrawable="@drawable/layer_player_lyric_size"
+        android:thumb="@drawable/shape_thumb"
+        android:id="@android:id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="2.0dip"
+        android:minHeight="2.0dip" />
+
+
+    <TextView
+        android:padding="6dp"
+        android:textSize="16sp"
+        android:text="歌词颜色："
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/setting_window_color_layout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</LinearLayout>
